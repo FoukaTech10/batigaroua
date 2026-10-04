@@ -1,20 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Guide pratique — BâtiGaroua</title><link rel="stylesheet" href="css/style.css"></head>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide pratique | BâtiGaroua</title>
+<meta name="description" content="Checklist interactive pour préparer un projet de construction.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232f5d3a'/%3E%3Cpath d='M15 55 50 22l35 33v28H15z' fill='%23f3c98b'/%3E%3C/svg%3E">
+</head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="logo" href="index.html"><span>BG</span> BâtiGaroua</a><button class="menu-toggle">☰</button><nav class="nav"><a href="index.html">Accueil</a><a href="materiaux.html">Matériaux</a><a href="ventilation.html">Ventilation</a><a href="drainage.html">Drainage & fondations</a><a class="active" href="guide.html">Guide pratique</a><a href="contact.html">Contact</a></nav></div></header>
-<main><section class="page-hero"><div class="container"><p class="eyebrow">GUIDE PRATIQUE</p><h1>Votre checklist de construction</h1><p>Utilisez cette liste pour préparer une discussion avec un artisan, un technicien ou un petit maître d’ouvrage.</p></div></section>
-<section class="section"><div class="container">
-<div class="guide-list">
-<label><input type="checkbox"> Le terrain a été observé avant le projet.</label>
-<label><input type="checkbox"> L’orientation du bâtiment a été réfléchie.</label>
-<label><input type="checkbox"> Les fenêtres et ouvertures favorisent la circulation de l’air.</label>
-<label><input type="checkbox"> Des protections contre le soleil sont prévues.</label>
-<label><input type="checkbox"> Les matériaux sont disponibles et adaptés au projet.</label>
-<label><input type="checkbox"> Le terrain et les fondations ont été étudiés.</label>
-<label><input type="checkbox"> L’eau de pluie est dirigée loin des fondations.</label>
-<label><input type="checkbox"> Les détails d’entretien ont été anticipés.</label>
-</div>
-<div class="progress-box"><div class="progress-label"><span>Progression</span><strong id="progress">0 / 8</strong></div><div class="progress"><span id="progressBar"></span></div></div>
+<header class="site">
+  <div class="container nav">
+    <a class="logo" href="index.html">Bâti<span>Garoua</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="menu" id="menu"><li><a href="index.html">Accueil</a></li><li><a href="materiaux.html">Matériaux</a></li><li><a href="ventilation.html">Ventilation</a></li><li><a href="drainage.html">Drainage &amp; fondations</a></li><li><a href="guide.html" class="active" aria-current="page">Guide pratique</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+<section class="hero small"><div class="container"><h1>Guide pratique : checklist du projet</h1><p>Cochez les points validés : la progression se calcule automatiquement.</p></div></section>
+<section class="bloc"><div class="container">
+  <div class="progress-box" aria-live="polite">
+    <strong id="compteur">0 / 19 points validés (0 %)</strong>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="barre"></span></div>
+    <div id="msg-progress">Cochez les points au fur et à mesure de votre préparation.</div>
+  </div>
+  <div class="check-group"><h3>Terrain</h3><label class="check-item"><input type="checkbox"><span>Le terrain a été visité en saison des pluies (zones d'eau stagnante repérées).</span></label><label class="check-item"><input type="checkbox"><span>Les titres et limites du terrain sont vérifiés.</span></label><label class="check-item"><input type="checkbox"><span>Le risque d'inondation a été pris en compte.</span></label><label class="check-item"><input type="checkbox"><span>La nature du sol a été reconnue (puits d'essai ou avis d'un technicien).</span></label></div><div class="check-group"><h3>Orientation &amp; ventilation</h3><label class="check-item"><input type="checkbox"><span>Les grandes ouvertures évitent les façades est et ouest.</span></label><label class="check-item"><input type="checkbox"><span>Chaque pièce a des ouvertures permettant un courant d'air.</span></label><label class="check-item"><input type="checkbox"><span>Des ouvertures hautes évacuent l'air chaud.</span></label><label class="check-item"><input type="checkbox"><span>Un auvent ou une véranda protège les façades exposées.</span></label></div><div class="check-group"><h3>Matériaux</h3><label class="check-item"><input type="checkbox"><span>Les matériaux sont disponibles localement et leur qualité a été vérifiée.</span></label><label class="check-item"><input type="checkbox"><span>Un échantillon de briques/blocs a été testé avant la commande.</span></label><label class="check-item"><input type="checkbox"><span>La toiture prévoit un vide d'air ou un plafond ventilé.</span></label><label class="check-item"><input type="checkbox"><span>Le bois est sec et traité contre les termites.</span></label></div><div class="check-group"><h3>Fondations &amp; drainage</h3><label class="check-item"><input type="checkbox"><span>Le type de fondation a été validé par un professionnel.</span></label><label class="check-item"><input type="checkbox"><span>Le plancher est surélevé par rapport au terrain.</span></label><label class="check-item"><input type="checkbox"><span>Des pentes et rigoles éloignent l'eau des murs.</span></label><label class="check-item"><input type="checkbox"><span>Les eaux de toiture sont rejetées loin de la maison.</span></label></div><div class="check-group"><h3>Budget &amp; entretien</h3><label class="check-item"><input type="checkbox"><span>Un budget avec une marge pour imprévus a été établi.</span></label><label class="check-item"><input type="checkbox"><span>Un maçon ou artisan qualifié a été choisi (références vérifiées).</span></label><label class="check-item"><input type="checkbox"><span>Un plan d'entretien annuel est prévu (toiture, enduits, rigoles).</span></label></div>
+  <div class="btn-row" style="justify-content:flex-start"><button class="btn" id="reset" type="button">Réinitialiser la checklist</button><button class="btn clair" type="button" onclick="window.print()" style="border:2px solid var(--vert)">Imprimer</button></div>
+  <div class="note" style="margin-top:1.5rem">Votre progression est mémorisée dans votre navigateur (sur cet appareil uniquement).</div>
+
+  <h2 style="margin-top:2.5rem">Petit glossaire</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Terme</th><th>Définition simple</th></tr></thead>
+    <tbody>
+      <tr><td>BTC</td><td>Brique de terre comprimée, souvent stabilisée au ciment ou à la chaux.</td></tr>
+      <tr><td>Soubassement</td><td>Partie basse du mur, entre les fondations et le plancher, très exposée à l'eau.</td></tr>
+      <tr><td>Chaînage</td><td>Ceinture en béton armé qui relie les murs et limite les fissures.</td></tr>
+      <tr><td>Ventilation traversante</td><td>Circulation d'air entre des ouvertures placées sur des côtés opposés.</td></tr>
+      <tr><td>Débord de toit</td><td>Partie de la toiture qui dépasse du mur pour l'ombrer et l'abriter de la pluie.</td></tr>
+      <tr><td>Capillarité</td><td>Remontée de l'humidité du sol dans le mur.</td></tr>
+    </tbody></table></div>
 </div></section>
-<section class="section band"><div class="container two-col"><div><h2>Petit glossaire</h2><p><strong>Bioclimatique :</strong> conception qui tient compte du climat local pour améliorer le confort.</p><p><strong>Drainage :</strong> ensemble de dispositions permettant de maîtriser l’eau autour d’un ouvrage.</p></div><div><h2>Conseil final</h2><p>Un bon projet commence par l’observation du site. Avant de choisir une solution, regardez le soleil, le vent, le sol et l’eau.</p></div></div></section>
-</main><footer class="footer"><div class="container footer-grid"><div><strong>BâtiGaroua</strong><p>Guide de construction durable adapté au Nord-Cameroun.</p></div><div><strong>Projet pédagogique</strong><p>Ingénierie de la Construction</p></div></div><div class="copyright">© 2026 BâtiGaroua</div></footer><script src="js/script.js"></script></body></html>
+
+<footer class="site">
+  <div class="container cols">
+    <div>
+      <strong>BâtiGaroua</strong><br>
+      Guide de la construction durable et adaptée au climat du Nord-Cameroun.<br>
+      Projet pédagogique — cours de Création de site web — Parcours Ingénierie de la Construction.
+    </div>
+    <div>
+      <strong>Binôme</strong><br>
+      BOUBA KALGONBÉ Valère — 25IBAI0077<br>
+      TITELEM NOUDJOM Aurélien — 25IBAI0190
+    </div>
+    <div>
+      <strong>Rappel</strong><br>
+      Conseils généraux à but pédagogique : ils ne remplacent pas l'étude d'un professionnel.<br>
+      © <span id="annee">2026</span> BâtiGaroua
+    </div>
+  </div>
+</footer>
+<button id="haut" aria-label="Retour en haut">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

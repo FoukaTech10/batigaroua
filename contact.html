@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Contact — BâtiGaroua</title><link rel="stylesheet" href="css/style.css"></head>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact et présentation | BâtiGaroua</title>
+<meta name="description" content="Présentation du binôme et formulaire de contact.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232f5d3a'/%3E%3Cpath d='M15 55 50 22l35 33v28H15z' fill='%23f3c98b'/%3E%3C/svg%3E">
+</head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="logo" href="index.html"><span>BG</span> BâtiGaroua</a><button class="menu-toggle">☰</button><nav class="nav"><a href="index.html">Accueil</a><a href="materiaux.html">Matériaux</a><a href="ventilation.html">Ventilation</a><a href="drainage.html">Drainage & fondations</a><a href="guide.html">Guide pratique</a><a class="active" href="contact.html">Contact</a></nav></div></header>
-<main><section class="page-hero"><div class="container"><p class="eyebrow">À PROPOS DU PROJET</p><h1>Contact & présentation</h1><p>BâtiGaroua est un projet réalisé dans le cadre du cours de Création de site web.</p></div></section>
-<section class="section"><div class="container contact-grid">
-<div><h2>Notre binôme</h2><div class="person"><span>BK</span><div><strong>BOUBA KALGONBÉ Valère</strong><p>Matricule : 25IBAI0077</p></div></div><div class="person"><span>TN</span><div><strong>TITELEM NOUDJOM Aurélien</strong><p>Matricule : 25IBAI0190</p></div></div><div class="project-info"><p><strong>Parcours :</strong> Ingénierie de la Construction</p><p><strong>Thème :</strong> construction durable et adaptée au climat du Nord-Cameroun</p></div></div>
-<form class="contact-form" id="contactForm"><h2>Nous écrire</h2><label>Nom<input id="name" type="text" placeholder="Votre nom" required></label><label>Email<input id="email" type="email" placeholder="votre@email.com" required></label><label>Message<textarea id="message" rows="5" placeholder="Votre message..." required></textarea></label><button class="btn btn-primary" type="submit">Envoyer</button><p id="formMessage" class="form-message"></p></form>
-</div></section></main>
-<footer class="footer"><div class="container footer-grid"><div><strong>BâtiGaroua</strong><p>Construire mieux au Nord-Cameroun.</p></div><div><strong>Projet pédagogique</strong><p>Création de site web</p></div></div><div class="copyright">© 2026 BâtiGaroua — Projet pédagogique</div></footer><script src="js/script.js"></script></body></html>
+<header class="site">
+  <div class="container nav">
+    <a class="logo" href="index.html">Bâti<span>Garoua</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="menu" id="menu"><li><a href="index.html">Accueil</a></li><li><a href="materiaux.html">Matériaux</a></li><li><a href="ventilation.html">Ventilation</a></li><li><a href="drainage.html">Drainage &amp; fondations</a></li><li><a href="guide.html">Guide pratique</a></li><li><a href="contact.html" class="active" aria-current="page">Contact</a></li></ul>
+  </div>
+</header>
+<section class="hero small"><div class="container"><h1>Contact &amp; présentation du projet</h1><p>Qui sommes-nous, et pourquoi BâtiGaroua ?</p></div></section>
+<section class="bloc"><div class="container">
+  <div class="contact-grid">
+    <div>
+      <h2>Le projet</h2>
+      <p>BâtiGaroua est un site pédagogique réalisé dans le cadre du cours de <strong>Création de site web</strong>, parcours <strong>Ingénierie de la Construction</strong>. Il vulgarise les principes de la construction durable adaptée au climat du Nord-Cameroun.</p>
+      <h3>Le binôme</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Étudiant</th><th>Matricule</th></tr></thead>
+        <tbody>
+          <tr><td>BOUBA KALGONBÉ Valère</td><td>25IBAI0077</td></tr>
+          <tr><td>TITELEM NOUDJOM Aurélien</td><td>25IBAI0190</td></tr>
+        </tbody></table></div>
+      <h3>Technologies utilisées</h3>
+      <ul class="liste"><li>HTML5 : structure des six pages</li><li>CSS3 : mise en forme et responsive design</li><li>JavaScript : menu mobile, checklist, validation du formulaire</li><li>Hébergement statique gratuit (GitHub Pages)</li></ul>
+      <div class="attention"><strong>Limites :</strong> projet pédagogique, sans base de données. Le formulaire est une démonstration : aucun message n'est réellement transmis.</div>
+    </div>
+    <div>
+      <h2>Nous écrire</h2>
+      <form id="form-contact" novalidate>
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" autocomplete="name"><div class="erreur" id="err-nom"></div>
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" autocomplete="email"><div class="erreur" id="err-email"></div>
+        <label for="sujet">Sujet *</label>
+        <select id="sujet" name="sujet"><option value="">— Choisir —</option><option>Question sur les matériaux</option><option>Question sur la ventilation</option><option>Question sur le drainage / fondations</option><option>Autre</option></select><div class="erreur" id="err-sujet"></div>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5"></textarea><div class="erreur" id="err-message"></div>
+        <button class="btn" type="submit" style="margin-top:1rem">Envoyer</button>
+        <div id="retour-form" role="status"></div>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<footer class="site">
+  <div class="container cols">
+    <div>
+      <strong>BâtiGaroua</strong><br>
+      Guide de la construction durable et adaptée au climat du Nord-Cameroun.<br>
+      Projet pédagogique — cours de Création de site web — Parcours Ingénierie de la Construction.
+    </div>
+    <div>
+      <strong>Binôme</strong><br>
+      BOUBA KALGONBÉ Valère — 25IBAI0077<br>
+      TITELEM NOUDJOM Aurélien — 25IBAI0190
+    </div>
+    <div>
+      <strong>Rappel</strong><br>
+      Conseils généraux à but pédagogique : ils ne remplacent pas l'étude d'un professionnel.<br>
+      © <span id="annee">2026</span> BâtiGaroua
+    </div>
+  </div>
+</footer>
+<button id="haut" aria-label="Retour en haut">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

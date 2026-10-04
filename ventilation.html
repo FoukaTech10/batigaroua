@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Ventilation naturelle — BâtiGaroua</title><link rel="stylesheet" href="css/style.css"></head>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ventilation naturelle | BâtiGaroua</title>
+<meta name="description" content="Ventilation naturelle et protection solaire pour les bâtiments.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232f5d3a'/%3E%3Cpath d='M15 55 50 22l35 33v28H15z' fill='%23f3c98b'/%3E%3C/svg%3E">
+</head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="logo" href="index.html"><span>BG</span> BâtiGaroua</a><button class="menu-toggle">☰</button><nav class="nav"><a href="index.html">Accueil</a><a href="materiaux.html">Matériaux</a><a class="active" href="ventilation.html">Ventilation</a><a href="drainage.html">Drainage & fondations</a><a href="guide.html">Guide pratique</a><a href="contact.html">Contact</a></nav></div></header>
-<main><section class="page-hero"><div class="container"><p class="eyebrow">FICHE 02</p><h1>Ventiler naturellement</h1><p>La conception des ouvertures peut réduire la sensation de chaleur et améliorer le confort sans dépendre en permanence de la climatisation.</p></div></section>
-<section class="section"><div class="container two-col">
-<div><h2>Créer un chemin pour l’air</h2><p>La ventilation traversante fonctionne mieux lorsque les ouvertures sont disposées sur des façades permettant à l’air d’entrer et de sortir.</p><div class="flow-diagram"><div>🌬️<br><span>Entrée d’air</span></div><div class="arrow">→ → →</div><div>🏠<br><span>Pièce</span></div><div class="arrow">→ → →</div><div>🌬️<br><span>Sortie</span></div></div></div>
-<div class="list-panel"><h3>5 réflexes</h3><div class="rule"><b>01</b> Favoriser les ouvertures opposées lorsque la configuration le permet.</div><div class="rule"><b>02</b> Placer des protections solaires au-dessus des fenêtres.</div><div class="rule"><b>03</b> Utiliser des ouvertures hautes pour aider à évacuer l’air chaud.</div><div class="rule"><b>04</b> Éviter de bloquer les circulations d’air avec des cloisons inutiles.</div><div class="rule"><b>05</b> Adapter les ouvertures à la sécurité, à la poussière et aux usages.</div></div>
+<header class="site">
+  <div class="container nav">
+    <a class="logo" href="index.html">Bâti<span>Garoua</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="menu" id="menu"><li><a href="index.html">Accueil</a></li><li><a href="materiaux.html">Matériaux</a></li><li><a href="ventilation.html" class="active" aria-current="page">Ventilation</a></li><li><a href="drainage.html">Drainage &amp; fondations</a></li><li><a href="guide.html">Guide pratique</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </div>
+</header>
+<section class="hero small"><div class="container"><h1>Ventilation naturelle &amp; protection solaire</h1><p>Rester au frais sans dépendre de la climatisation, grâce à la conception du bâtiment.</p></div></section>
+<section class="bloc"><div class="container">
+  <h2>Le principe</h2>
+  <p class="intro">Une maison confortable en climat chaud repose sur trois idées : <strong>se protéger du soleil</strong>, <strong>laisser l'air circuler</strong> et <strong>évacuer la chaleur accumulée</strong>. Cela se décide dès le plan, pas après la construction.</p>
+
+  <figure class="schema">
+    <svg viewBox="0 0 640 260" role="img" aria-label="Schéma de ventilation traversante avec ouvertures basses et hautes" width="640">
+      <rect width="640" height="260" fill="#fffdf8"/>
+      <rect x="0" y="220" width="640" height="40" fill="#e9dcc3"/>
+      <polygon points="120,70 320,20 520,70" fill="#a8643a"/>
+      <polygon points="95,78 320,25 545,78 545,70 320,15 95,70" fill="#7a4425" opacity=".0"/>
+      <rect x="140" y="70" width="360" height="150" fill="#f6efe2" stroke="#7a4425" stroke-width="4"/>
+      <rect x="140" y="140" width="14" height="50" fill="#4f8a5b"/>
+      <rect x="486" y="140" width="14" height="50" fill="#4f8a5b"/>
+      <rect x="250" y="70" width="140" height="14" fill="#fffdf8" stroke="#7a4425"/>
+      <g stroke="#2f5d3a" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M20 165 H135"/><path d="M125 155 l12 10 -12 10"/>
+        <path d="M160 165 C250 165 260 110 320 100"/>
+        <path d="M320 100 C 380 90 330 62 320 58"/>
+        <path d="M320 58 V30"/>
+      </g>
+      <g stroke="#a8643a" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M340 100 C420 110 420 165 480 165"/><path d="M505 165 H620"/><path d="M608 155 l12 10 -12 10"/>
+      </g>
+      <text x="22" y="150" font-size="14" fill="#2f5d3a" font-weight="700">Air frais</text>
+      <text x="510" y="150" font-size="14" fill="#a8643a" font-weight="700">Air chaud</text>
+      <text x="236" y="52" font-size="13" fill="#7a4425" font-weight="700">sortie d'air chaud (haut)</text>
+      <text x="150" y="212" font-size="13" fill="#7a4425">ouvertures face à face</text>
+    </svg>
+    <figcaption>Ventilation traversante : l'air entre d'un côté, traverse les pièces et l'air chaud s'échappe par les ouvertures hautes.</figcaption>
+  </figure>
+
+  <div class="grille">
+    <article class="carte"><span class="ico">↔️</span><h3>Ventilation traversante</h3><p>Placer des ouvertures sur deux façades opposées (ou adjacentes) pour que l'air traverse la pièce. Évitez les pièces « borgnes » à une seule ouverture.</p></article>
+    <article class="carte"><span class="ico">⬆️</span><h3>Ouvertures hautes</h3><p>L'air chaud monte : des ouvertures en partie haute (impostes, claustras, vide sous toiture) l'évacuent et créent un appel d'air.</p></article>
+    <article class="carte terre"><span class="ico">☂️</span><h3>Auvents et brise-soleil</h3><p>Un auvent ou une véranda ombrage les murs et les fenêtres. Un débord de toit d'au moins 1 m aide beaucoup côté ensoleillé.</p></article>
+    <article class="carte terre"><span class="ico">🌳</span><h3>Ombrage végétal</h3><p>Un arbre à feuillage dense côté ouest ou est rafraîchit la façade. Attention à ne pas planter trop près des fondations.</p></article>
+  </div>
+
+  <h2 style="margin-top:2.5rem">Orientation du bâtiment</h2>
+  <ul class="liste">
+    <li>Limiter les grandes ouvertures vitrées sur les façades <strong>est et ouest</strong>, où le soleil est bas et très chaud.</li>
+    <li>Orienter si possible les façades longues vers le <strong>nord et le sud</strong>, plus faciles à protéger avec un auvent.</li>
+    <li>Tenir compte des vents dominants de la zone pour placer les ouvertures d'entrée d'air.</li>
+    <li>Protéger les ouvertures de la poussière en saison sèche (moustiquaires, claustras).</li>
+  </ul>
+
+  <div class="table-wrap"><table>
+    <thead><tr><th>Problème</th><th>Solution simple</th></tr></thead>
+    <tbody>
+      <tr><td>Pièce très chaude l'après-midi</td><td>Ombrager la façade ouest (auvent, véranda, arbre) ; réduire la taille des ouvertures de ce côté.</td></tr>
+      <tr><td>Air stagnant dans la maison</td><td>Créer des ouvertures face à face et des ouvertures hautes.</td></tr>
+      <tr><td>Chaleur sous la toiture</td><td>Plafond ventilé, vide d'air sous la tôle, ouvertures de pignon.</td></tr>
+      <tr><td>Pluie qui entre par les fenêtres</td><td>Auvent, volets ajourés ou persiennes qui laissent passer l'air mais pas la pluie battante.</td></tr>
+    </tbody></table></div>
+  <div class="note">Une bonne ventilation naturelle n'exclut pas un ventilateur : bien placé, il complète le dispositif pendant les jours les plus chauds.</div>
 </div></section>
-<section class="section band"><div class="container"><h2>Attention au soleil</h2><p>La ventilation ne suffit pas si les surfaces vitrées reçoivent directement un fort rayonnement. Pensez aux auvents, vérandas, brise-soleil et arbres adaptés.</p></div></section>
-</main><footer class="footer"><div class="container footer-grid"><div><strong>BâtiGaroua</strong><p>Guide de construction durable adapté au Nord-Cameroun.</p></div><div><strong>Projet pédagogique</strong><p>Ingénierie de la Construction</p></div></div><div class="copyright">© 2026 BâtiGaroua</div></footer><script src="js/script.js"></script></body></html>
+
+<footer class="site">
+  <div class="container cols">
+    <div>
+      <strong>BâtiGaroua</strong><br>
+      Guide de la construction durable et adaptée au climat du Nord-Cameroun.<br>
+      Projet pédagogique — cours de Création de site web — Parcours Ingénierie de la Construction.
+    </div>
+    <div>
+      <strong>Binôme</strong><br>
+      BOUBA KALGONBÉ Valère — 25IBAI0077<br>
+      TITELEM NOUDJOM Aurélien — 25IBAI0190
+    </div>
+    <div>
+      <strong>Rappel</strong><br>
+      Conseils généraux à but pédagogique : ils ne remplacent pas l'étude d'un professionnel.<br>
+      © <span id="annee">2026</span> BâtiGaroua
+    </div>
+  </div>
+</footer>
+<button id="haut" aria-label="Retour en haut">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

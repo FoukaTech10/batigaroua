@@ -1,85 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BâtiGaroua : guide pratique de construction durable et adaptée au climat du Nord-Cameroun.">
-  <title>BâtiGaroua — Construire mieux au Nord-Cameroun</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil | BâtiGaroua</title>
+<meta name="description" content="Guide de la construction durable et adaptée au climat du Nord-Cameroun.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232f5d3a'/%3E%3Cpath d='M15 55 50 22l35 33v28H15z' fill='%23f3c98b'/%3E%3C/svg%3E">
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html"><span>BG</span> BâtiGaroua</a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
-    <nav class="nav">
-      <a class="active" href="index.html">Accueil</a>
-      <a href="materiaux.html">Matériaux</a>
-      <a href="ventilation.html">Ventilation</a>
-      <a href="drainage.html">Drainage & fondations</a>
-      <a href="guide.html">Guide pratique</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<header class="site">
+  <div class="container nav">
+    <a class="logo" href="index.html">Bâti<span>Garoua</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <ul class="menu" id="menu"><li><a href="index.html" class="active" aria-current="page">Accueil</a></li><li><a href="materiaux.html">Matériaux</a></li><li><a href="ventilation.html">Ventilation</a></li><li><a href="drainage.html">Drainage &amp; fondations</a></li><li><a href="guide.html">Guide pratique</a></li><li><a href="contact.html">Contact</a></li></ul>
   </div>
 </header>
 
-<main>
-<section class="hero">
-  <div class="container hero-grid">
+<section class="hero"><div class="container">
+  <h1>Construire durable, construire pour le climat du Nord-Cameroun</h1>
+  <p>BâtiGaroua est un guide simple et pratique destiné aux particuliers et aux petits maîtres d'ouvrage : matériaux locaux, ventilation naturelle, drainage et fondations.</p>
+  <div class="btn-row"><a class="btn" href="guide.html">Ouvrir la checklist</a><a class="btn clair" href="materiaux.html">Découvrir les matériaux</a></div>
+</div></section>
+
+<section class="bloc"><div class="container">
+  <h2>Pourquoi ce site ?</h2>
+  <p class="intro">Dans le Nord-Cameroun, le soleil est intense, la saison sèche est chaude et les pluies de la saison humide peuvent être violentes. Une maison mal pensée devient vite inconfortable, chère à entretenir et fragile. Quelques bonnes décisions prises <strong>avant</strong> le début du chantier changent beaucoup de choses.</p>
+  <div class="stats">
+    <div class="stat"><b>4</b>thèmes essentiels</div>
+    <div class="stat"><b>2</b>saisons marquées</div>
+    <div class="stat"><b>19</b>points de contrôle</div>
+    <div class="stat"><b>100&nbsp;%</b>gratuit</div>
+  </div>
+</div></section>
+
+<section class="bloc alt"><div class="container">
+  <h2>Les grands thèmes</h2>
+  <div class="grille">
+    <article class="carte"><span class="ico">🧱</span><h3>Matériaux locaux</h3><p>Terre stabilisée, blocs, bois, toitures : disponibilité, qualité et protection contre l'eau.</p><a class="lien" href="materiaux.html">Voir la page →</a></article>
+    <article class="carte"><span class="ico">🌬️</span><h3>Ventilation naturelle</h3><p>Ouvertures, circulation de l'air, auvents et ombrage pour rester au frais sans clim.</p><a class="lien" href="ventilation.html">Voir la page →</a></article>
+    <article class="carte terre"><span class="ico">💧</span><h3>Drainage &amp; fondations</h3><p>Éloigner l'eau de la maison, protéger le soubassement et adapter les fondations au sol.</p><a class="lien" href="drainage.html">Voir la page →</a></article>
+    <article class="carte terre"><span class="ico">✅</span><h3>Guide pratique</h3><p>Une checklist interactive pour préparer votre projet avant de commencer les travaux.</p><a class="lien" href="guide.html">Voir la page →</a></article>
+  </div>
+</div></section>
+
+<section class="bloc"><div class="container">
+  <h2>À qui s'adresse BâtiGaroua ?</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Public</th><th>Besoin</th><th>Ce que propose le site</th></tr></thead>
+    <tbody>
+      <tr><td>Particuliers</td><td>Comprendre les bons choix avant de construire ou rénover.</td><td>Conseils simples, fiches thématiques et checklist.</td></tr>
+      <tr><td>Petits maîtres d'ouvrage</td><td>Organiser les premières décisions du projet.</td><td>Informations structurées sur terrain, matériaux, eau et confort.</td></tr>
+      <tr><td>Étudiants</td><td>Découvrir les principes de conception bioclimatique.</td><td>Contenu pédagogique et glossaire.</td></tr>
+      <tr><td>Artisans / techniciens</td><td>Disposer d'un support de sensibilisation.</td><td>Synthèse pratique des points à vérifier.</td></tr>
+    </tbody></table></div>
+  <div class="note"><strong>Bon à savoir :</strong> ce site donne des repères généraux. Pour un terrain, un bâtiment ou un budget précis, faites toujours appel à un technicien, un ingénieur ou un architecte.</div>
+</div></section>
+
+<footer class="site">
+  <div class="container cols">
     <div>
-      <p class="eyebrow">INGÉNIERIE DE LA CONSTRUCTION • NORD-CAMEROUN</p>
-      <h1>Construire durablement sous le soleil de Garoua.</h1>
-      <p class="hero-text">BâtiGaroua propose des conseils simples et pratiques pour concevoir des bâtiments plus confortables, résistants et adaptés au climat chaud du Nord-Cameroun.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="guide.html">Voir le guide</a>
-        <a class="btn btn-light" href="materiaux.html">Découvrir les matériaux</a>
-      </div>
+      <strong>BâtiGaroua</strong><br>
+      Guide de la construction durable et adaptée au climat du Nord-Cameroun.<br>
+      Projet pédagogique — cours de Création de site web — Parcours Ingénierie de la Construction.
     </div>
-    <div class="hero-card">
-      <div class="sun">☀</div>
-      <h3>Notre idée</h3>
-      <p>Associer les savoir-faire locaux, les matériaux disponibles et les principes de conception bioclimatique.</p>
-      <div class="mini-stats">
-        <div><strong>01</strong><span>Climat</span></div>
-        <div><strong>02</strong><span>Matériaux</span></div>
-        <div><strong>03</strong><span>Eau</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div><p class="eyebrow">LES PRIORITÉS</p><h2>Les bons réflexes avant de construire</h2></div>
-      <p>Des solutions accessibles aux particuliers et petits maîtres d’ouvrage.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="icon">🧱</div><h3>Matériaux locaux</h3><p>Choisir des matériaux disponibles localement et adaptés aux fortes températures.</p><a href="materiaux.html">En savoir plus →</a></article>
-      <article class="card"><div class="icon">🌬️</div><h3>Ventilation naturelle</h3><p>Organiser les ouvertures pour favoriser la circulation de l’air et limiter la chaleur intérieure.</p><a href="ventilation.html">En savoir plus →</a></article>
-      <article class="card"><div class="icon">💧</div><h3>Gestion de l’eau</h3><p>Prévoir drainage, pente du terrain et protection des fondations pendant les pluies.</p><a href="drainage.html">En savoir plus →</a></article>
-    </div>
-  </div>
-</section>
-
-<section class="section band">
-  <div class="container two-col">
     <div>
-      <p class="eyebrow">POUR QUI ?</p>
-      <h2>Un guide pensé pour les petits projets.</h2>
-      <p>Que vous prépariez une maison familiale, une boutique, un petit bâtiment de service ou une rénovation, BâtiGaroua vous aide à poser les bonnes questions avant de démarrer.</p>
+      <strong>Binôme</strong><br>
+      BOUBA KALGONBÉ Valère — 25IBAI0077<br>
+      TITELEM NOUDJOM Aurélien — 25IBAI0190
     </div>
-    <div class="checklist">
-      <div>✓ Observer le terrain avant les travaux</div>
-      <div>✓ Anticiper l’orientation et les vents</div>
-      <div>✓ Protéger les murs et les fondations</div>
-      <div>✓ Choisir des solutions simples à entretenir</div>
+    <div>
+      <strong>Rappel</strong><br>
+      Conseils généraux à but pédagogique : ils ne remplacent pas l'étude d'un professionnel.<br>
+      © <span id="annee">2026</span> BâtiGaroua
     </div>
   </div>
-</section>
-</main>
-
-<footer class="footer"><div class="container footer-grid"><div><strong>BâtiGaroua</strong><p>Guide de construction durable adapté au Nord-Cameroun.</p></div><div><strong>Projet étudiant</strong><p>Ingénierie de la Construction</p><p>Valère Bouba Kalgonbé • Aurélien Titelem Noudjom</p></div></div><div class="copyright">© 2026 BâtiGaroua — Projet pédagogique</div></footer>
-<script src="js/script.js"></script>
+</footer>
+<button id="haut" aria-label="Retour en haut">↑</button>
+<script src="script.js"></script>
 </body>
 </html>
